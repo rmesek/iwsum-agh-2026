@@ -1,0 +1,4 @@
+- 1 nieusprawiedliwona obecność
+- oddanie zadania jako obecność lub sprawdzanie listy
+- czasami zadania z raportem, jako podstawa oceny końcowej (2-3)
+- kurs na upel
