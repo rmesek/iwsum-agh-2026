@@ -1,0 +1,1 @@
+- nie robić zadania z notebook-a, tylko z UPELa (np. gra kółko-krzyżyk)

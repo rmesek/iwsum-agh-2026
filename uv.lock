@@ -548,6 +548,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "notebook" },
     { name = "scikit-learn" },
+    { name = "simpful" },
     { name = "ucimlrepo" },
 ]
 
@@ -556,6 +557,7 @@ requires-dist = [
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "notebook", specifier = ">=7.5.4" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
+    { name = "simpful", specifier = ">=2.12.0" },
     { name = "ucimlrepo", specifier = ">=0.0.7" },
 ]
 
@@ -1725,6 +1727,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/82/f3/748f4d6f65d1756b9ae577f329c951cda23fb900e4de9f70900ced962085/setuptools-82.0.0.tar.gz", hash = "sha256:22e0a2d69474c6ae4feb01951cb69d515ed23728cf96d05513d36e42b62b37cb", size = 1144893, upload-time = "2026-02-08T15:08:40.206Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e1/c6/76dc613121b793286a3f91621d7b75a2b493e0390ddca50f11993eadf192/setuptools-82.0.0-py3-none-any.whl", hash = "sha256:70b18734b607bd1da571d097d236cfcfacaf01de45717d59e6e04b96877532e0", size = 1003468, upload-time = "2026-02-08T15:08:38.723Z" },
+]
+
+[[package]]
+name = "simpful"
+version = "2.12.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4f/29/eb3887c0627366d4121aae0c546dc0d7a5287dc64e6c1a00ced3645a813b/simpful-2.12.0.tar.gz", hash = "sha256:9c1290f0ad1b6674cb1567df055a809535924c714a6830f0a4aa0a8a3d60dddb", size = 27032, upload-time = "2024-02-27T12:56:10.324Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9d/0e/aebc2fb0b0f481994179b2ee2b8e6bbf0894d971594688c018375e7076ea/simpful-2.12.0-py3-none-any.whl", hash = "sha256:333b5ec7daa199f9b87839d845f5f0aa318a98c4066e7e3b7e66e4beb18ff95e", size = 24692, upload-time = "2024-02-27T12:56:08.072Z" },
 ]
 
 [[package]]
