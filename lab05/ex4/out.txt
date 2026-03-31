@@ -1,0 +1,23 @@
+Results for: 'Covariance-Mahalanobis'
+F1-score = 0.89
+Confusion matrix
+[[8886  114]
+ [ 114  886]]
+
+Results for: 'One-Class SVM'
+F1-score = 0.94
+Confusion matrix
+[[8939   61]
+ [  62  938]]
+
+Results for: 'Isolation Forest'
+F1-score = 0.96
+Confusion matrix
+[[8956   44]
+ [  44  956]]
+
+Results for: 'Local Outlier Factor'
+F1-score = 0.97
+Confusion matrix
+[[8966   34]
+ [  34  966]]

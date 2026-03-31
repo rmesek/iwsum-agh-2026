@@ -1,0 +1,4 @@
+F1-score = 0.9
+Confusion matrix
+[[8974   26]
+ [ 154  846]]

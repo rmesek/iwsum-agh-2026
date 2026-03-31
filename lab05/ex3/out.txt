@@ -1,0 +1,11 @@
+Results for: 'Covariance-Mahalanobis'
+F1-score = 0.079
+Confusion matrix
+[[9000    0]    
+ [ 959   41]]   
+
+Results for: 'One-Class SVM'
+F1-score = 0.67 
+Confusion matrix
+[[8121  879]    
+ [  51  949]]

@@ -1,3 +1,4 @@
+# iwsum-agh-2026\lab05>uv run -m ex5.script5
 """
 Based on: https://blog.keras.io/building-autoencoders-in-keras.html
 """
