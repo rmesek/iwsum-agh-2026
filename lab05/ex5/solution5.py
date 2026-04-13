@@ -1,14 +1,17 @@
 import numpy as np
 
 
-def reconstruction_errors(inputs: np.ndarray, reconstructions: np.ndarray) -> np.ndarray:
+def reconstruction_errors(
+    inputs: np.ndarray, reconstructions: np.ndarray
+) -> np.ndarray:
     """Calculate reconstruction errors.
 
     :param inputs: Numpy array of input images
     :param reconstructions: Numpy array of reconstructions
     :return: Numpy array (1D) of reconstruction errors for each pair of input and its reconstruction
     """
-    pass
+    # 1) Błąd średniokwadratowy (MSE)
+    return np.mean(np.square(inputs - reconstructions), axis=1)
 
 
 def calc_threshold(reconstr_err_nominal: np.ndarray) -> float:
@@ -17,7 +20,8 @@ def calc_threshold(reconstr_err_nominal: np.ndarray) -> float:
     :param reconstr_err_nominal: Numpy array of reconstruction errors for examples drawn from nominal class.
     :return: Anomaly-detection threshold
     """
-    pass
+    # 2) 3 odchylenia standardowe (99.7% rule)
+    return np.mean(reconstr_err_nominal) + 3 * np.std(reconstr_err_nominal)
 
 
 def detect(reconstr_err_all: np.ndarray, threshold: float) -> list:
@@ -27,4 +31,5 @@ def detect(reconstr_err_all: np.ndarray, threshold: float) -> list:
     :param threshold: Anomaly-detection threshold
     :return: list of 0/1 values
     """
-    pass
+    # 3) Wyniki detekcji (1 - anomalia, 0 - normalny)
+    return (reconstr_err_all > threshold).astype(int).tolist()
