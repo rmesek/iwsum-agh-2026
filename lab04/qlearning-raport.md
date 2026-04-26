@@ -40,3 +40,13 @@ $$Q(s_t, a_t) \leftarrow Q(s_t, a_t) + \alpha \left( r_t + \gamma Q(s_{t+1}, a_{
 ### Wnioski
 * Wyniki dla algorytmu SARSA są zbliżone, jednak nieco gorsze niż dla Q-Learningu, jednak może to wynikać z wysokiej wariancji wyników i braku stabilności uczenia.
 * Algorytm SARSA jest bardziej konserwatywny, co może prowadzić do wolniejszego uczenia, ale potencjalnie stabilniejszego zachowania w dłuższej perspektywie, jednak tego nie widać w naszych wynikach.
+
+## Zadanie LunarLander
+
+Zaimplementowano agenta Q-Learning dla środowiska *LunarLander-v3*.
+
+![LunarLander results](LunarLander-results.png)
+
+### Wnioski
+* Środowisko LunarLander jest znacznie bardziej złożone niż CartPole.
+* Wymaga znacznie dłuższego czasu uczenia (3000 epizodów), ale obserwujemy rosnący trend nagród, co sugeruje, że agent uczy się skutecznie.
